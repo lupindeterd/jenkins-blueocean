@@ -120,6 +120,11 @@
           <serviceAccount>jenkins</serviceAccount>
           <nodeSelector></nodeSelector>
           <customWorkspaceVolumeEnabled>false</customWorkspaceVolumeEnabled>
+          <volumes>
+             <org.csanchez.jenkins.plugins.kubernetes.volumes.ConfigMapVolume>
+               <mountPath>/home/jenkins/.m2</mountPath>
+               <configMapName>maven-slave-pvc</configMapName>
+             </org.csanchez.jenkins.plugins.kubernetes.volumes.ConfigMapVolume>
           <volumes/>
           <containers>
             <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
