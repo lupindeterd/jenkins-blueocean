@@ -125,7 +125,7 @@
                <mountPath>/home/jenkins/.m2</mountPath>
                <configMapName>maven-slave-pvc</configMapName>
              </org.csanchez.jenkins.plugins.kubernetes.volumes.ConfigMapVolume>
-          <volumes/>
+          </volumes>
           <containers>
             <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
               <name>jnlp</name>
